@@ -1,0 +1,19 @@
+//If it is all 9's then make all the elements as 0 and add an extra 1 at the beginning.
+
+function plusOne(digits) {
+  for (let i = digits.length - 1; i >= 0; i--) {
+    if (digits[i] != 9) {
+      digits[i]++;
+      return digits;
+    } else
+    {
+      digits[i] = 0;
+      if (i == 0) {
+        digits.unshift(1);
+      }
+    }
+  }  
+  return digits;
+}
+let addDigits = plusOne([9, 1, 2]);
+console.log(addDigits);
