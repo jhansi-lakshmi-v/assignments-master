@@ -159,7 +159,7 @@ class Calculator {
     numArr.push(')');
     numArr.unshift('(');
 
-    console.log(numArr);
+    //console.log(numArr);
 
     const itemCounter = (value, index) => {
       return value.filter((x) => x == index).length;
